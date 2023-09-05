@@ -1,5 +1,11 @@
 pipeline {
 	agent any
+	tools {
+		nextflow
+	}
+	parameter {
+		choice
+	}
 	stages {
 		stage("build") {
 			steps {
