@@ -36,7 +36,4 @@ nextflow run kariton \\
     }
 
   }
-  environment {
-    nextflow = ''
-  }
 }
