@@ -4,7 +4,10 @@ pipeline {
     stage('Clone Repository') {
       agent any
       steps {
-        sh 'git clone https://github.com/tsg-ritmmbl/kariton.git'
+        sh '''which nohup
+sudo apt-get install nohup
+echo $PATH
+git clone https://github.com/tsg-ritmmbl/kariton.git'''
       }
     }
 
