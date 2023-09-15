@@ -1,13 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Clone Repository') {
+    stage('Message') {
       agent any
       steps {
-        sh '''which nohup
-sudo apt-get install nohup
-echo $PATH
-git clone https://github.com/tsg-ritmmbl/kariton.git'''
+        sh 'echo "Hello"'
       }
     }
 
