@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Run Pipeline') {
       steps {
-        sh '''#!/bin/bash
-
-# Set the path to your Nextflow pipeline repository
+        sh '''# Set the path to your Nextflow pipeline repository
 PIPELINE_REPO="https://github.com/your-username/your-pipeline-repo.git"
 
 # Set any required input parameters for your Nextflow pipeline
