@@ -1,12 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('Install Nextflow') {
+    stage('Clone Repository') {
       agent any
       steps {
-        sh 'curl -s https://get.nextflow.io | bash'
+        sh 'git clone https://github.com/tsg-ritmmbl/kariton.git'
       }
     }
 
+  }
+  environment {
+    nextflow = ''
   }
 }
