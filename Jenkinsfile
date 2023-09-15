@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Message') {
-      agent any
+    stage('AntArtic:nextcladeDL') {
       steps {
-        sh 'echo "Hello"'
+        sh '''mkdir nextclade
+nextclade dataset get --name "sars-cov-2" --output-dir "nextclade"'''
       }
     }
 
