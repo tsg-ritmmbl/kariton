@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('docker') {
       steps {
-        sh 'sudo apt update'
+        powershell 'sudo apt update'
       }
     }
 
