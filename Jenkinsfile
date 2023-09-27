@@ -1,10 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('CLONE') {
+    stage('docker') {
       steps {
-        echo 'done'
-        sh 'docker pull nextflow/nextflow'
+        sh 'sudo apt update'
       }
     }
 
