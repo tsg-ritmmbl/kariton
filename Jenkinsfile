@@ -1,12 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('GET PARAMETERS') {
+    stage('CLONE') {
       steps {
-        node(label: 'devopstesting') {
-          ws(dir: 'C:\\Users\\MBL-IT\\.jenkins\\workspace')
-        }
-
+        echo 'done'
       }
     }
 
